@@ -8,7 +8,7 @@ from std_msgs.msg import String  # Standard ROS 2 message type
 from geometry_msgs.msg import Twist  # Import the Twist message type
 
 # Load gesture model
-model_dict = pickle.load(open('/home/vboxuser/ros2_ws/src/gesture_recognition/gesture_recognition/model.p', 'rb'))
+model_dict = pickle.load(open('model.p', 'rb'))
 model = model_dict['model']
 
 # Initialize MediaPipe
